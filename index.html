@@ -40,7 +40,7 @@ color: #38bdf8;
 }
 
 .section {
-    padding: 60px 20px;
+    padding: 80px 20px;
 }
 
 .projects {
@@ -54,6 +54,7 @@ color: #38bdf8;
     background: #1e293b;
     padding: 25px;
     border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .card img {
@@ -63,7 +64,12 @@ color: #38bdf8;
 }
 
 .card h3 {
-margin-bottom: 10px;
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+
+.card p {
+font-size: 14px;
 }
 
 .card:first-child {
@@ -89,8 +95,8 @@ background: #0ea5e9;
 }
 
 .card:hover {
-transform: scale(1.05);
-transition: 0.3s;
+transform: translateY(-5px);
+box-shadow: 0 10px 20px rgba(0,0,0,0.3);
 }
 
 footer {
@@ -103,15 +109,16 @@ footer {
 
 <body>
 
-    <nav style="text-align:center; padding:10px; background:#020617;"> 
-        <a href="#projects" style="margin:10px; color:white;">Projects</a> 
-        <a href="#contact" style="margin:10px; color:white;">Contact</a> 
+    <nav style="text-align:center; padding:15px; background:#020617;"> 
+        <a href="#projects" style="margin:15px; color:white; text-decoration:none;">Projects</a> 
+        <a href="#contact" style="margin:15px; color:white; text-decoration:none;">Contact</a> 
     </nav>
 
 <header>
     <h1>Mochi Godwin</h1>
     <p>Graphic Designer | Front-End Developer</p>
     <p>I design and build clean, responsive digital experiences for brands and users.</p>
+    <p>Worked on 50+ design projects including branding, UI, and marketing materials.</p>
     <button onclick="document.getElementById('projects').scrollIntoView()">View My Work</button>
 <button onclick="document.getElementById('contact').scrollIntoView()">Contact Me</button>
 </header>
@@ -138,6 +145,7 @@ footer {
             <img src="images/image-8.png" alt="Finance app dashboard showing budget summary section with a briefcase icon, expense tracking information, and a dollar sign symbol representing financial management tools. Dark theme interface with blue accents displaying spending overview and budget allocation features.">
             <img src="images/image-9.png" alt="Login form for AI Finance Assistant with username and password input fields, blue Login button, and Sign up here link. Clean white card interface centered on light gray background with dark blue heading text.">
             <p>Designed a clean interface for a finance assistant app.</p>
+            <p>Tools: Visual Studio Code</p>
         </div>
 
         <div class="card">
